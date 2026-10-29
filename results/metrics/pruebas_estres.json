@@ -1,0 +1,124 @@
+{
+  "baseline_validacion": {
+    "pr_auc": 0.697532674710088,
+    "precision@10%": 0.8519659624413145,
+    "lift@10%": 2.042465018248154
+  },
+  "ruido_gaussiano": {
+    "sigma_rel=0.0": {
+      "pr_auc": 0.697532674710088,
+      "precision@10%": 0.8519659624413145,
+      "lift@10%": 2.042465018248154,
+      "caida_pr_auc_pct": 0.0
+    },
+    "sigma_rel=0.1": {
+      "pr_auc": 0.6848728838241611,
+      "precision@10%": 0.8446302816901409,
+      "lift@10%": 2.0248787859574002,
+      "caida_pr_auc_pct": 1.81
+    },
+    "sigma_rel=0.2": {
+      "pr_auc": 0.6690265980247649,
+      "precision@10%": 0.8276115023474179,
+      "lift@10%": 1.9840787270428515,
+      "caida_pr_auc_pct": 4.09
+    },
+    "sigma_rel=0.5": {
+      "pr_auc": 0.6140551131085125,
+      "precision@10%": 0.7419307511737089,
+      "lift@10%": 1.7786715338868462,
+      "caida_pr_auc_pct": 11.97
+    },
+    "sigma_rel=1.0": {
+      "pr_auc": 0.5550391704182029,
+      "precision@10%": 0.6340962441314554,
+      "lift@10%": 1.5201539192127642,
+      "caida_pr_auc_pct": 20.43
+    }
+  },
+  "datos_faltantes": {
+    "frac=0.0": {
+      "pr_auc": 0.697532674710088,
+      "precision@10%": 0.8519659624413145,
+      "lift@10%": 2.042465018248154,
+      "caida_pr_auc_pct": 0.0
+    },
+    "frac=0.1": {
+      "pr_auc": 0.6406048117674389,
+      "precision@10%": 0.7573356807511737,
+      "lift@10%": 1.8156026216974295,
+      "caida_pr_auc_pct": 8.16
+    },
+    "frac=0.3": {
+      "pr_auc": 0.5806379222389627,
+      "precision@10%": 0.6757629107981221,
+      "lift@10%": 1.6200437186242465,
+      "caida_pr_auc_pct": 16.76
+    },
+    "frac=0.5": {
+      "pr_auc": 0.5498910461326681,
+      "precision@10%": 0.655956572769953,
+      "lift@10%": 1.5725608914392109,
+      "caida_pr_auc_pct": 21.17
+    }
+  },
+  "desbalance_extremo": {
+    "tasa_base_objetivo=0.05": {
+      "tasa_base_real": 0.049997608913968726,
+      "pr_auc": 0.22807374026799476,
+      "precision@10%": 0.19607843137254902
+    },
+    "tasa_base_objetivo=0.01": {
+      "tasa_base_real": 0.009992026313166551,
+      "pr_auc": 0.05908625865477496,
+      "precision@10%": 0.03862447047096935
+    }
+  },
+  "cambio_distribucion_recency": {
+    "recency_dias+0": {
+      "pr_auc": 0.697532674710088,
+      "precision@10%": 0.8519659624413145,
+      "lift@10%": 2.042465018248154,
+      "caida_pr_auc_pct": 0.0
+    },
+    "recency_dias+15": {
+      "pr_auc": 0.6934003677483849,
+      "precision@10%": 0.8490316901408451,
+      "lift@10%": 2.035430525331853,
+      "caida_pr_auc_pct": 0.59
+    },
+    "recency_dias+30": {
+      "pr_auc": 0.6757425361722679,
+      "precision@10%": 0.8377347417840375,
+      "lift@10%": 2.0083477276040917,
+      "caida_pr_auc_pct": 3.12
+    },
+    "recency_dias+60": {
+      "pr_auc": 0.6282000556426077,
+      "precision@10%": 0.7963615023474179,
+      "lift@10%": 1.90916137748424,
+      "caida_pr_auc_pct": 9.94
+    }
+  },
+  "caida_feature_clave": {
+    "recency_dias": {
+      "pr_auc": 0.6332871319756896,
+      "precision@10%": 0.7855046948356808,
+      "lift@10%": 1.883133753693924,
+      "caida_pr_auc_pct": 9.21
+    },
+    "umbral_propio_dias": {
+      "pr_auc": 0.6624291502002303,
+      "precision@10%": 0.7916666666666666,
+      "lift@10%": 1.8979061888181574,
+      "caida_pr_auc_pct": 5.03
+    },
+    "n_dias_activo_12m": {
+      "pr_auc": 0.6853958604411173,
+      "precision@10%": 0.8480046948356808,
+      "lift@10%": 2.032968452811147,
+      "caida_pr_auc_pct": 1.74
+    }
+  },
+  "nota_metodologica": "Todas las pruebas se corrieron sobre el conjunto de VALIDACION (C4), nunca sobre test (C5), para no romper la regla no negociable de tocar el test una sola vez. El modelo (best_model.pkl) no se reentreno en ningun caso: solo se perturbaron los datos de entrada antes de predict_proba()."
+}

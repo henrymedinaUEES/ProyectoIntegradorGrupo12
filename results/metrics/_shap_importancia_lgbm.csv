@@ -1,0 +1,15 @@
+feature,shap_abs_medio
+recency_dias,0.5610597546761509
+umbral_propio_dias,0.2963516759330556
+n_dias_activo_12m,0.22429591249260672
+tendencia_gasto,0.15502612621107587
+n_visitas_12m,0.06159644233372674
+antiguedad_meses,0.04841641177764153
+n_bodegas_distintas_12m,0.04464201142494338
+monto_total_12m,0.017354317135553285
+n_metodos_pago_distintos_12m,0.011343094635952114
+ticket_promedio,0.004340434528323757
+metodo_pago_principal_12m,0.00397838466991867
+n_categorias_distintas_12m,0.002560208285193475
+pct_gasto_cronico_12m,0.002519167043047371
+es_comprador_cronico,3.1650351277098227e-05

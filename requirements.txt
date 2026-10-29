@@ -1,0 +1,35 @@
+# Dependencias de Python del proyecto (versiones verificadas 26/09/2026,
+# las mismas usadas para generar notebooks/ y entrenar models/best_model.pkl)
+pandas==2.3.3
+numpy==2.2.6
+scikit-learn==1.7.2
+lightgbm==4.7.0
+shap==0.49.1
+joblib==1.6.0
+matplotlib==3.10.9
+pyarrow==25.0.1
+nbformat==5.11.1
+
+# Agregadas 17/10/2026 para la evaluacion estadistica robusta (bootstrap/
+# significancia), el analisis de sesgo (Fairlearn) y la sensibilidad de
+# hiperparametros (Optuna) exigidos por la Semana 5 / rubro del proyecto 2026.
+# No son necesarias para entrenar/evaluar el modelo de produccion (train.py /
+# evaluate.py), solo para results/metrics/*.json generados en esa fecha.
+scipy==1.15.3
+fairlearn==0.14.0
+optuna==5.0.0
+
+# Para correr los notebooks de notebooks/
+jupyter
+
+# Para correr las pruebas de tests/
+pytest==9.1.1
+
+# Interfaz web local de app/app.py
+streamlit>=1.40,<2
+openpyxl==3.1.5  # exporta el ranking descargable como Excel (.xlsx)
+
+# Solo si se retoma la recoleccion desde SQL Server (fuera del alcance de
+# esta carpeta estructurada; ver docs/planificacion.md): sqlalchemy, pyodbc,
+# python-dotenv. Credenciales de solo lectura -- ver PLAN_DE_ACCION.md /
+# CONTEXTO_PROYECTO.md, regla no negociable #10.

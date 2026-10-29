@@ -1,0 +1,53 @@
+{
+  "n_test": 66421,
+  "n_bootstrap": 2000,
+  "pr_auc_puntual_e_ic95": {
+    "LightGBM A2 (produccion)": {
+      "pr_auc": 0.6874514877471765,
+      "ic95_lo": 0.6818587672143067,
+      "ic95_hi": 0.6928968532498357,
+      "boot_std": 0.0028872089658214663
+    },
+    "Regresion logistica": {
+      "pr_auc": 0.6701340422908387,
+      "ic95_lo": 0.6643465686102366,
+      "ic95_hi": 0.6760794830864169,
+      "boot_std": 0.003022817812031698
+    },
+    "Nivel 0 (recencia)": {
+      "pr_auc": 0.6403246802521156,
+      "ic95_lo": 0.6343082394783047,
+      "ic95_hi": 0.6465297577565422,
+      "boot_std": 0.0031636356203478128
+    }
+  },
+  "diferencias_pareadas": {
+    "LightGBM A2 vs Regresion logistica": {
+      "diferencia_media": 0.017330740950965144,
+      "ic95_lo": 0.0150999921371133,
+      "ic95_hi": 0.01937572402119539,
+      "p_empirico_no_mejora": 0.0,
+      "evidencia_de_mejora": true
+    },
+    "LightGBM A2 vs Nivel 0 (recencia)": {
+      "diferencia_media": 0.047129132521002405,
+      "ic95_lo": 0.04390871979621055,
+      "ic95_hi": 0.05021317162566964,
+      "p_empirico_no_mejora": 0.0,
+      "evidencia_de_mejora": true
+    }
+  },
+  "mcnemar_top10pct": {
+    "LightGBM A2 vs Regresion logistica (top-10%)": {
+      "solo_lgbm_acierta": 1485,
+      "solo_rival_acierta": 1189,
+      "p_valor_mcnemar_exacto": 1.1268131696276871e-08
+    },
+    "LightGBM A2 vs Nivel 0 (recencia) (top-10%)": {
+      "solo_lgbm_acierta": 2900,
+      "solo_rival_acierta": 2018,
+      "p_valor_mcnemar_exacto": 2.209069689596123e-36
+    }
+  },
+  "nota_metodologica": "Dado que el diseno del proyecto usa una particion fija por cliente y out-of-time (no folds aleatorios i.i.d.), la validacion cruzada repetida de la Semana 5 no aplica tal cual: mezclar folds temporales violaria la regla no negociable de particion out-of-time. En su lugar se usa bootstrap sobre el conjunto de test ya congelado (C5, tocado una sola vez) para estimar la incertidumbre del PR-AUC, y McNemar sobre predicciones top-10% para una prueba de significancia pareada. Ambos modelos ya estaban entrenados y congelados; no se volvio a entrenar nada para este analisis."
+}

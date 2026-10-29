@@ -1,0 +1,48 @@
+{
+  "n_filas": 2035200,
+  "pct_nulos_por_columna": {
+    "recency_dias": 0.0,
+    "n_visitas_12m": 0.0,
+    "n_dias_activo_12m": 0.0,
+    "monto_total_12m": 0.0,
+    "ticket_promedio": 0.0,
+    "tendencia_gasto": 1.96,
+    "pct_gasto_cronico_12m": 0.0,
+    "n_categorias_distintas_12m": 0.0,
+    "n_bodegas_distintas_12m": 0.0,
+    "antiguedad_meses": 0.0,
+    "n_metodos_pago_distintos_12m": 0.0,
+    "umbral_propio_dias": 0.0,
+    "metodo_pago_principal_12m": 0.0,
+    "churn": 0.0
+  },
+  "pct_outliers_iqr_por_columna": {
+    "recency_dias": 5.94,
+    "n_visitas_12m": 9.65,
+    "n_dias_activo_12m": 8.6,
+    "monto_total_12m": 10.0,
+    "ticket_promedio": 6.71,
+    "tendencia_gasto": 9.18,
+    "pct_gasto_cronico_12m": 23.54,
+    "n_categorias_distintas_12m": 11.81,
+    "n_bodegas_distintas_12m": 5.02,
+    "antiguedad_meses": 0.17,
+    "n_metodos_pago_distintos_12m": 23.35,
+    "umbral_propio_dias": 0.0
+  },
+  "correlacion_con_churn_top": {
+    "recency_dias": 0.369,
+    "n_dias_activo_12m": -0.201,
+    "n_visitas_12m": -0.185,
+    "n_categorias_distintas_12m": -0.172,
+    "n_bodegas_distintas_12m": -0.152,
+    "monto_total_12m": -0.135,
+    "antiguedad_meses": -0.067,
+    "umbral_propio_dias": -0.045,
+    "n_metodos_pago_distintos_12m": -0.041,
+    "pct_gasto_cronico_12m": -0.025,
+    "ticket_promedio": -0.014,
+    "tendencia_gasto": -0.001
+  },
+  "churn_rate_global": 0.389500786163522
+}

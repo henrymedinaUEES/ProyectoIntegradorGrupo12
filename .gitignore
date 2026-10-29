@@ -1,0 +1,28 @@
+# Entornos y cache de Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+
+# Credenciales (si se retoma la conexion a SQL Server)
+.env
+
+# Datos y modelos pesados: se versionan aparte (Git LFS) o no se versionan.
+# Se dejan listados explicitamente en vez de ignorar data//models/ enteros
+# porque data/README.md y models/README.md SI deben versionarse.
+data/raw/*.parquet
+data/processed/*.parquet
+# models/*.pkl
+# models/*.joblib
+
+# Salidas grandes regenerables (quedan documentadas en docs/, no en git)
+results/figures/*.png
+
+# Sistema operativo / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

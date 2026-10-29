@@ -1,0 +1,52 @@
+{
+  "alto_riesgo": {
+    "prob": 0.919829679511905,
+    "top": [
+      {
+        "feature": "umbral_propio_dias",
+        "valor": "14.0",
+        "shap": 1.165
+      },
+      {
+        "feature": "recency_dias",
+        "valor": "225.0",
+        "shap": 1.106
+      },
+      {
+        "feature": "tendencia_gasto",
+        "valor": "0.0",
+        "shap": 0.33
+      },
+      {
+        "feature": "n_dias_activo_12m",
+        "valor": "4.0",
+        "shap": 0.242
+      }
+    ]
+  },
+  "bajo_riesgo": {
+    "prob": 0.047006068614095335,
+    "top": [
+      {
+        "feature": "recency_dias",
+        "valor": "1.0",
+        "shap": -1.553
+      },
+      {
+        "feature": "n_dias_activo_12m",
+        "valor": "96.0",
+        "shap": -0.691
+      },
+      {
+        "feature": "umbral_propio_dias",
+        "valor": "14.0",
+        "shap": 0.522
+      },
+      {
+        "feature": "n_visitas_12m",
+        "valor": "105.0",
+        "shap": -0.45
+      }
+    ]
+  }
+}

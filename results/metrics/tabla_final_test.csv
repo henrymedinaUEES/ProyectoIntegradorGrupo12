@@ -1,0 +1,2 @@
+modelo,pr_auc,precision@1%,lift@1%,precision@3%,lift@3%,precision@5%,lift@5%,precision@10%,lift@10%,precision@20%,lift@20%,precision@30%,lift@30%
+"LightGBM A2 (TEST, produccion)",0.6875,0.9774,2.4345,0.9383,2.337,0.9121,2.2718,0.8403,2.0929,0.7403,1.8439,0.6748,1.6808

@@ -1,0 +1,53 @@
+{
+  "segmento_frecuencia": {
+    "por_grupo": [
+      {
+        "sensitive_feature_0": "1. baja",
+        "selection_rate": 0.2145,
+        "recall": 0.3148
+      },
+      {
+        "sensitive_feature_0": "2. media",
+        "selection_rate": 0.0608,
+        "recall": 0.1321
+      },
+      {
+        "sensitive_feature_0": "3. alta",
+        "selection_rate": 0.0342,
+        "recall": 0.1097
+      }
+    ],
+    "diferencia_maxima_entre_grupos": {
+      "selection_rate": 0.18033049708054713,
+      "recall": 0.2050226639009025
+    },
+    "razon_minima_entre_grupos": {
+      "selection_rate": 0.1593346190475821,
+      "recall": 0.34861803092739096
+    }
+  },
+  "es_comprador_cronico": {
+    "por_grupo": [
+      {
+        "sensitive_feature_0": "0",
+        "selection_rate": 0.0993,
+        "recall": 0.2081
+      },
+      {
+        "sensitive_feature_0": "1",
+        "selection_rate": 0.173,
+        "recall": 0.3204
+      }
+    ],
+    "diferencia_maxima_entre_grupos": {
+      "selection_rate": 0.07371657675954615,
+      "recall": 0.1123339933471885
+    },
+    "razon_minima_entre_grupos": {
+      "selection_rate": 0.5739317123072103,
+      "recall": 0.6494191855977853
+    }
+  },
+  "umbral_usado": "top 10% de la lista por score (consistente con el tamano de campana ya reportado en el proyecto)",
+  "nota": "No existen variables demograficas en el esquema final (DIM_CLIENTE no tiene fecha de nacimiento; 'sexo' se quito del esquema de 16 columnas vigente), asi que no es posible medir sesgo demografico directo (edad, genero). Se usan como proxies los unicos grupos disponibles de forma consistente con las reglas no negociables del proyecto (desglose obligatorio por segmento_frecuencia y por es_comprador_cronico, regla #5 de PLAN_DE_ACCION.md)."
+}

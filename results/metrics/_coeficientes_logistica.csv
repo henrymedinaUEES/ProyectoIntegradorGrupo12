@@ -1,0 +1,19 @@
+feature,coeficiente,direccion
+n_dias_activo_12m,-0.6482832826015499,baja riesgo
+umbral_propio_dias,-0.5096285825957647,baja riesgo
+recency_dias,0.46034546617064676,sube riesgo
+metodo_pago_principal_12m_CRP,-0.29151642638281344,baja riesgo
+monto_total_12m,-0.18765831136289385,baja riesgo
+metodo_pago_principal_12m_OTROS,0.14958297482452335,sube riesgo
+tendencia_gasto,-0.13055775989943919,baja riesgo
+metodo_pago_principal_12m_EFE,-0.1006355561666173,baja riesgo
+n_bodegas_distintas_12m,-0.1006337255195833,baja riesgo
+metodo_pago_principal_12m_TAR,-0.09647715519402199,baja riesgo
+ticket_promedio,0.09363016339979288,sube riesgo
+n_visitas_12m,0.09114111362431906,sube riesgo
+n_metodos_pago_distintos_12m,0.04958683110610816,sube riesgo
+antiguedad_meses,-0.035603598003763316,baja riesgo
+metodo_pago_principal_12m_DEB,-0.028506906505651724,baja riesgo
+pct_gasto_cronico_12m,-0.023124592241408067,baja riesgo
+es_comprador_cronico,0.004271571336183224,sube riesgo
+n_categorias_distintas_12m,-0.003267884623522356,baja riesgo

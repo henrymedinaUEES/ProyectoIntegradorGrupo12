@@ -1,0 +1,25 @@
+{
+  "n_trials": 40,
+  "submuestra_train": 150000,
+  "mejor_pr_auc_val_submuestra": 0.697028961468917,
+  "mejores_params_submuestra": {
+    "num_leaves": 31,
+    "learning_rate": 0.08,
+    "min_child_samples": 100,
+    "subsample": 0.9,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 0.0
+  },
+  "importancia_hiperparametros": {
+    "subsample": 0.5720289753082567,
+    "reg_lambda": 0.2921741573231672,
+    "learning_rate": 0.0569019532417868,
+    "min_child_samples": 0.041714076978066186,
+    "colsample_bytree": 0.018944220215025946,
+    "num_leaves": 0.018236616933697228
+  },
+  "comparacion_con_config_produccion": {
+    "pr_auc_val_produccion_dataset_completo": 0.697532674710088,
+    "nota": "Esta corrida usa una submuestra de 150k filas de train (vs 796k reales) solo para poder correr 40 pruebas de Optuna con tiempos razonables; la configuracion final de produccion (en src/model.py) se eligio con el dataset completo en T3.3/T3.4 y NO cambia por este ejercicio de sensibilidad."
+  }
+}
